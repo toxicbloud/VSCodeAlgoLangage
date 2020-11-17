@@ -1,6 +1,6 @@
 # Language Configuration Sample
 
-This is the source code for the [Language Configuration Guide](https://code.visualstudio.com/api/language-extensions/language-configuration-guide). This sample controls the following [Declarative Language Features](https://code.visualstudio.com/api/language-extensions/overview#declarative-language-support) for JavaScript:
+This is the source code for the [Langage Algorithmique IUTNC](https://code.visualstudio.com/api/language-extensions/language-configuration-guide). This extension controls the following [Declarative Language Features](https://code.visualstudio.com/api/language-extensions/overview#declarative-language-support) for algo:
 
 - Comment toggling
 - Brackets definition
