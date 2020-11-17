@@ -1,0 +1,36 @@
+{
+  "name": "langage-algorithmique-iutnc",
+  "displayName": "langage-algorithmique-iutnc",
+  "description": "coloration syntaxique auto-complétion et indentation du langage algorithmique utilisé à l'IUT Nancy-Charlemagne",
+  "version": "0.0.1",
+  "publisher": "Antonin-Rousseau",
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "algo",
+      "aliases": ["algorithmique", "algo"],
+      "extensions": [".algo"],
+      "configuration": "./language-configuration.json"
+  }],
+    "grammars": [{
+      "language": "algo",
+      "scopeName": "source.algo",
+      "path": "./syntaxes/algo.tmLanguage.json"
+  }],
+  "snippets": [
+    {
+      "language": "algo",
+      "path": "./snippets.json"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toxicbloud/VSCodeAlgoLangage.git"
+  }
+  }
+}

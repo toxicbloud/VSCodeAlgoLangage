@@ -1,0 +1,99 @@
+{
+	"Construit une boucle pour": {
+		"scope": "javascript",
+		"prefix": "pour",
+		"body": [
+			"pour $1 de $2 à $3 faire",
+			"\t",
+			"fpour"
+		]
+	},
+
+	"Construit une fonction": {
+		"scope": "javascript",
+		"prefix": "fonction()",
+		"body": [
+			"fonction ($1)$2",
+			"début",
+			"\t",
+			"fin"
+		]
+	},
+
+	"Construit une boucle tantque": {
+		"scope": "javascript",
+		"prefix": "tantque",
+		"body": [
+			"tantque $1 faire",
+			"\t",
+			"ftant"
+		]
+	},
+	"Construit un algorithme": {
+		"scope": "javascript",
+		"prefix": "Algorithme",
+		"body": [
+			"Algorithme",
+			"début",
+			"\t",
+			"fin"
+		]
+	},
+	"Construit un lexique": {
+		"scope": "javascript",
+		"prefix": "Lexique",
+		"body": [
+			"Lexique",
+			"début",
+			"\t",
+			"fin"
+		]
+	},
+	"Construit un si": {
+		"scope": "javascript",
+		"prefix": "si",
+		"body": [
+			"si $1",
+			"\talors",
+			"\t\t",
+			"\tsinon",
+			"\t\t",
+			"fsi"
+		]
+	},
+	"créer un fichier": {
+		"scope": "javascript",
+		"prefix": "fichierCréer",
+		"body": [
+			"fichierCréer ($1)"
+		]
+	},
+	"Ouvre un fichier": {
+		"scope": "javascript",
+		"prefix": "fichierOuvrir",
+		"body": [
+			"fichierOuvrir ($1)"
+		]
+	},
+	"fermer un fichier": {
+		"scope": "javascript",
+		"prefix": "fichierFermer",
+		"body": [
+			"fichierFermer ($1)"
+		]
+	},
+	"Lire un fichier": {
+		"scope": "javascript",
+		"prefix": "fichierFermer",
+		"body": [
+			"fichierFermer ($1)"
+		]
+	},
+	"écrire un fichier fichierEcrire (fich, élément)": {
+		"scope": "javascript",
+		"prefix": "fichierEcrire",
+		"body": [
+			"fichierEcrire ($1,$2)"
+		]
+	}
+}
