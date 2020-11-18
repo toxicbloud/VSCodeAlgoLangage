@@ -1,0 +1,58 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "algorithmique",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.algo",
+				"match": "\\b(si|fsi|sinon|alors|tantque|ftant|faire|pour|fpour|de|à|retourne)\\b"
+			},
+			{
+				"name": "keyword.operator.algo",
+				"match": "\\b(et|ou|non)\\b"
+			},
+			{
+				"name": "comment.line.algo",
+				"match": "\\b(//)\\b"
+			},
+			{
+				"name": "storage.type.algo",
+				"match": "\\b(entier|chaîne|réel)\\b"
+			},
+			{
+				"name": "support.function.algo",
+				"match": "\\b(fonction)\\b"
+			},
+			{
+				"name": "storage.modfier.algo",
+				"match": "\\b(début|fin)\\b"
+			},
+			{
+				"name": "keyword.operator.swift",
+				"match": "[\\/=\\-+!*%<>&|^~,\\?:\\[\\]]"
+			}
+	
+		]
+		},
+		"strings": {
+			"name": "string.quoted.double.algo",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.algo",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.algo"
+}

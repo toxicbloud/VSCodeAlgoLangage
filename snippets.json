@@ -3,7 +3,7 @@
 		"scope": "javascript",
 		"prefix": "pour",
 		"body": [
-			"pour $1 de $2 à $3 faire",
+			"pour ${1:variable} de ${2:valeur} à ${3:valeur} faire",
 			"\t",
 			"fpour"
 		]
@@ -13,7 +13,7 @@
 		"scope": "javascript",
 		"prefix": "fonction()",
 		"body": [
-			"fonction ($1)$2",
+			"fonction (${1:variable:Type})${2:rendu}",
 			"début",
 			"\t",
 			"fin"
@@ -24,13 +24,12 @@
 		"scope": "javascript",
 		"prefix": "tantque",
 		"body": [
-			"tantque $1 faire",
+			"tantque ${1:condition} faire",
 			"\t",
 			"ftant"
 		]
 	},
 	"Construit un algorithme": {
-		"scope": "javascript",
 		"prefix": "Algorithme",
 		"body": [
 			"Algorithme",
@@ -65,35 +64,132 @@
 		"scope": "javascript",
 		"prefix": "fichierCréer",
 		"body": [
-			"fichierCréer ($1)"
+			"fichierCréer (${1:fichier})"
 		]
 	},
 	"Ouvre un fichier": {
 		"scope": "javascript",
 		"prefix": "fichierOuvrir",
 		"body": [
-			"fichierOuvrir ($1)"
+			"fichierOuvrir (${1:fichier})"
 		]
 	},
 	"fermer un fichier": {
 		"scope": "javascript",
 		"prefix": "fichierFermer",
 		"body": [
-			"fichierFermer ($1)"
+			"fichierFermer (${1:fichier})"
 		]
 	},
 	"Lire un fichier": {
 		"scope": "javascript",
-		"prefix": "fichierFermer",
+		"prefix": "fichierLire",
 		"body": [
-			"fichierFermer ($1)"
+			"fichierLire (${1:fichier})"
 		]
 	},
 	"écrire un fichier fichierEcrire (fich, élément)": {
 		"scope": "javascript",
 		"prefix": "fichierEcrire",
 		"body": [
-			"fichierEcrire ($1,$2)"
-		]
+			"fichierEcrire (${1:fichier},${2:élément})"
+		],
+		"description":"écrire un élément dans un fichier donné"
+	},
+	"fonction tête": {
+		"scope": "javascript",
+		"prefix": "tête",
+		"body": [
+			"tête (${1:liste})"
+		],
+		"description":"rend la place du premier élément de la liste"
+	},
+	"fonction val": {
+		"scope": "javascript",
+		"prefix": "val",
+		"body": [
+			"val (${1:liste},${2:place})"
+		],
+		"description":"rend la valeur associée à une place"
+	},
+	"fonction suc": {
+		"scope": "javascript",
+		"prefix": "suc",
+		"body": [
+			"suc (${1:liste},${2:place})"
+		],
+		"description":"rend la place suivant la place en paramètre"
+	},
+	"fonction finliste": {
+		"scope": "javascript",
+		"prefix": "finliste",
+		"body": [
+			"finliste (${1:liste},${2:place})"
+		],
+		"description":"La fonction finliste permet de tester si une place donnée est la place nil c’est-à-dire si on est positionné à la fin de la liste."
+	},
+	"fonction listevide": {
+		"scope": "javascript",
+		"prefix": "lisvide()",
+		"body": [
+			"lisvide ()"
+		],
+		"description":"Permet de créer une liste vide , ex : l<-lisvide()"
+	},
+	"fonction adjonction tete de liste": {
+		"scope": "javascript",
+		"prefix": "adjtlis()",
+		"body": [
+			"adjtlis (${1:liste},tête(${1:liste}))"
+		],
+		"description":"adjonction en tête de la liste"
+	},
+	"fonction suptlis": {
+		"scope": "javascript",
+		"prefix": "suptlis()",
+		"body": [
+			"suptlis (${1:liste})"
+		],
+		"description":"suppression en tête"
+	},
+	"fonction adjqlis": {
+		"scope": "javascript",
+		"prefix": "adjqlis()",
+		"body": [
+			"adjqlis (${1:liste},${2:valeur})"
+		],
+		"description":"adjonction en queue de liste"
+	},
+	"fonction supqlis": {
+		"scope": "javascript",
+		"prefix": "supqlis()",
+		"body": [
+			"supqlis (${1:liste})"
+		],
+		"description":"suppression en queue"
+	},
+	"fonction adjlis": {
+		"scope": "javascript",
+		"prefix": "adjlis()",
+		"body": [
+			"adjlis (${1:liste},${2:place element},${3:valeur})"
+		],
+		"description":"adjonction après une place p ; adjlis  (l,  p,  v)  :  adjonction  à  la  liste  l  supposée non vide, juste après  l’élément de place p, d’un  nouvel  élément de valeur v."
+	},
+	"fonction suplis": {
+		"scope": "javascript",
+		"prefix": "suplis()",
+		"body": [
+			"suplis (${1:liste},${2:place})"
+		],
+		"description":"suppression d’un élément à une place donnée"
+	},
+	"fonction chglis": {
+		"scope": "javascript",
+		"prefix": "chglis()",
+		"body": [
+			"chglis (${1:liste},${2:place},${3:valeur})"
+		],
+		"description":"changement de la valeur d’un élément"
 	}
 }
