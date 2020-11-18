@@ -8,6 +8,20 @@
 			"fpour"
 		]
 	},
+	"Construit un écrire": {
+		"scope": "javascript",
+		"prefix": "écrire()",
+		"body": [
+			"écrire (${1:variable})"
+		]
+	},
+	"Construit une flêche": {
+		"scope": "javascript",
+		"prefix": "fleche",
+		"body": [
+			"←"
+		]
+	},
 
 	"Construit une fonction": {
 		"scope": "javascript",
